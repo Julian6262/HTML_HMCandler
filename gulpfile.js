@@ -2,7 +2,7 @@ const {src, dest, watch, parallel} = require('gulp');
 const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
-const uglify = require('gulp-uglify-es').default();
+const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const avif = require('gulp-avif');
@@ -16,12 +16,14 @@ const include = require('gulp-include');
 
 function styles() {
     return src([
+        'node_modules/normalize.css/normalize.css',
         // 'node_modules/magnific-popup/dist/magnific-popup.css',
         // 'node_modules/swiper/swiper-bundle.css',
+        'app/scss/fonts.scss',
         'app/scss/style.scss',
         'app/scss/media.scss'
     ])
-        .pipe(scss({outputStyle: 'expanded'}))
+        .pipe(scss({outputStyle: 'compressed'}))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 versions'],
             grid: true
@@ -33,13 +35,13 @@ function styles() {
 
 function scripts() {
     return src([
-        'node_modules/jquery/dist/jquery.js',
+        // 'node_modules/jquery/dist/jquery.js',
         // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
         // 'node_modules/swiper/swiper-bundle.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
-        .pipe(uglify)
+        .pipe(uglify())
         .pipe(dest('app/js'))
         .pipe(browserSync.stream())
 }
@@ -98,9 +100,12 @@ function watching() {
         }
     });
     watch(['app/scss/**/*.scss'], styles);
-    watch(['app/img/src/*.*'], images);
-    watch(['app/components/*.*', 'app/pages/*.*'], pages);
     watch(['app/js/**/*.js', '!app/js/**/main.min.js'], scripts);
+    watch(['app/img/src/*.*'], images);
+    watch(['app/img/fonts/*.*'], fonts);
+    // watch(['app/components/*.*', 'app/pages/*.*'], pages);
+    watch(['app/*.html']).on('change', browserSync.reload);
+
 }
 
 function build() {
