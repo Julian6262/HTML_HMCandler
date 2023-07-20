@@ -158,6 +158,63 @@ li {
 }
 
 
+//ABOUT
+.about {
+    color: #FAFAFA;
+    background-color: #A5978E;
+    padding-top: 128px;
+    padding-bottom: 186px;
+}
+
+.about__inner {
+    position: relative;
+}
+
+.about__content {
+    width: 370px;
+}
+
+.about__title {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.about__text {
+    margin-top: 15px;
+}
+
+.about__images {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: -70px;
+    left: 515px;
+}
+
+.about__images-text {
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 12px;
+}
+
+.about__line {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    bottom: -125px;
+    left: 380px;
+}
+
+.about__line-line {
+    background-color: #7B6152;
+    width: 10000px;
+    height: 1px;
+    opacity: 0.8;
+}
+
+
 //KEYFRAMES
 @keyframes menu-open {
     0% {
