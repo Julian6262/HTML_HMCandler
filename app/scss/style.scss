@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden
+}
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -15,12 +19,18 @@ body {
     line-height: 16px;
     color: black;
     background-color: #FFF8F3;
-    overflow-x: hidden;
 }
 
 button {
     border: none;
     background-color: transparent;
+}
+
+.title {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 15px;
 }
 
 a {
@@ -48,6 +58,12 @@ li {
     align-items: center;
     background-color: #FFBD59;
     font-size: 14px;
+}
+
+.line {
+    display: flex;
+    position: absolute;
+    align-items: center;
 }
 
 .btn:hover {
@@ -132,6 +148,7 @@ li {
 .top {
     margin-top: 195px;
     margin-bottom: 415px;
+    overflow-x: clip;
 }
 
 .top__content {
@@ -174,16 +191,6 @@ li {
     width: 370px;
 }
 
-.about__title {
-    font-family: 'Yeseva One', sans-serif;
-    font-size: 40px;
-    line-height: 46px;
-}
-
-.about__text {
-    margin-top: 15px;
-}
-
 .about__images {
     display: flex;
     align-items: center;
@@ -200,18 +207,82 @@ li {
 }
 
 .about__line {
-    display: flex;
-    position: absolute;
-    align-items: center;
     bottom: -125px;
     left: 380px;
 }
 
-.about__line-line {
+.line__line {
     background-color: #7B6152;
     width: 10000px;
     height: 1px;
     opacity: 0.8;
+}
+
+
+//PRODUCTS
+.products {
+    margin-top: 150px;
+}
+
+.products__inner {
+    display: flex;
+    gap: 69px;
+    position: relative;
+}
+
+.products__content {
+    width: 372px;
+}
+
+.products__items {
+    width: 673px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 50px;
+    margin-bottom: 70px;
+    justify-content: space-between;
+}
+
+.products__item {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.products__item-price, .products__item-name {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.products__item-price {
+    margin-top: 8px;
+}
+
+.products__item-name {
+    margin-top: 12px;
+}
+
+.products__item-text {
+    font-size: 12px;
+    line-height: 13px;
+    margin-top: 16px;
+    min-height: 45px;
+}
+
+.products__line {
+    bottom: -17px;
+    left: 380px;
+}
+
+.products__btn {
+    margin-top: 15px;
+}
+
+.products__item-img {
+    width: 94%;
 }
 
 
