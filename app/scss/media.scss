@@ -44,6 +44,23 @@
     .products__line {
         left: 322px;
     }
+
+    .stages {
+        &__item-img {
+            width: 128px;
+            height: 225px;
+        }
+    }
+
+    .stages__items {
+        row-gap: 37px;
+        column-gap: 35px;
+        width: 635px;
+    }
+
+    .stages__content {
+        width: 297px;
+    }
 }
 
 
@@ -68,6 +85,23 @@
 
     .products__inner {
         gap: 30px;
+    }
+
+    .stages {
+        &__content {
+            width: 191px;
+        }
+    }
+
+    .stages {
+        &__item-text {
+            font-size: 12px;
+        }
+
+        &__item-img {
+            width: 100px;
+            height: 160px;
+        }
     }
 }
 
@@ -180,6 +214,28 @@
         height: 36px;
         font-size: 12px;
     }
+
+    .stages {
+        &__item-num {
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        &__item-text {
+            font-size: 8px;
+            line-height: 9px;
+        }
+
+        &__item-img {
+            width: 85px;
+            height: 150px;
+        }
+    }
+
+    .stages__items {
+        width: 435px;
+        row-gap: 25px;
+    }
 }
 
 
@@ -213,6 +269,25 @@
 
     .products__line {
         left: 10px;
+    }
+
+    .stages__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stages {
+        padding-top: 50px;
+    }
+
+    .stages__items {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .stages__content {
+        width: 300px;
+        text-align: center;
     }
 }
 
@@ -263,6 +338,10 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 50px;
+    }
+
+    .stages__line {
+        left: 0;
     }
 }
 
@@ -344,12 +423,38 @@
     .products__text {
         line-height: 11px;
     }
+
+    .stages__items {
+        max-width: 440px;
+    }
+
+    .stages__item {
+        gap: 20px;
+    }
 }
 
 
 @media (max-width: 420px) {
     .products__item {
         width: 150px;
+    }
+
+    .stages__items {
+        gap: 20px 25px;
+    }
+
+    .stages {
+        &__item {
+        }
+
+        &__item-content {
+        }
+
+
+        &__item-img {
+            width: 67px;
+            height: 101px;
+        }
     }
 }
 
@@ -409,5 +514,19 @@
 
     .products__content {
         width: 235px;
+    }
+
+    .stages__item-text {
+        font-size: 6px;
+        line-height: 7px;
+    }
+
+    .stages__text {
+        font-size: 8px;
+    }
+
+    .stages__item-num {
+        font-size: 12px;
+        line-height: 14px;
     }
 }
