@@ -304,7 +304,7 @@ li {
 .stages {
     &__items {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         gap: 72px 25px;
         margin-bottom: 72px;
         position: relative;
@@ -337,7 +337,7 @@ li {
 .stages__item:nth-child(4n+1), .stages__item:nth-child(4n+2) {
     flex-direction: row;
 
-    .stages__item-num{
+    .stages__item-num {
         text-align: left;
     }
 }
@@ -351,6 +351,102 @@ li {
     bottom: -90px;
     left: -20px;
 }
+
+
+//COURSES
+.courses {
+    &__inner {
+        display: flex;
+        margin-top: 159px;
+        column-gap: 73px;
+    }
+
+    &__content {
+        width: 369px;
+    }
+
+    &__items {
+        display: grid;
+        width: 664px;
+        position: relative;
+        margin-bottom: 79px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+        column-gap: 30px;
+    }
+
+    &__item {
+        width: 269px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__item:nth-child(2n) {
+        justify-self: end;
+    }
+
+    &__item-title {
+        font-family: 'Yeseva One', sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 28px;
+    }
+
+    &__item-text {
+        margin-top: 15px;
+    }
+
+    &__item-title-decor, &__item-time, &__item-price {
+        color: white;
+        font-family: 'Yeseva One', sans-serif;
+        position: absolute;
+        font-size: 11px;
+        background-color: #BEA495;
+    }
+
+    &__item-title-decor {
+        top: 166px;
+        left: 0;
+        padding: 15px 15px 15px 10px;
+    }
+
+    &__item-time {
+        top: 224px;
+        left: 0;
+        padding: 7px 15px 7px 16px;
+    }
+
+    &__item-price {
+        top: 329px;
+        right: -14px;
+        padding: 18px 18px 18px 10px;
+    }
+
+    &__btn {
+        margin-top: 24px;
+        width: 129px;
+        height: 42px;
+    }
+
+    &__line {
+        bottom: -98px;
+        left: -61px;
+    }
+}
+
+
+
+
+
+
+
 
 
 //KEYFRAMES
