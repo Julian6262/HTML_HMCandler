@@ -6,7 +6,7 @@ const menuList = document.querySelector('.header__menu');
 //     toggleTwoClasses(menuList, "menu--open", "menu--close", 500);
 // })
 
-
+// BURGER ////////////////////
 document.onclick = function (e) {
     toggleTwoClasses(e, menuList, "menu--open", "menu--close", 500);
 };
@@ -26,4 +26,4 @@ function toggleTwoClasses(e, element, first, second, timeOfAnimation) {
         }
     }
 }
-
+///////////////////////////

@@ -67,6 +67,34 @@
             width: 300px;
         }
     }
+
+    .teachers {
+        &__items {
+            row-gap: 30px;
+        }
+
+        &__item {
+            width: 260px;
+        }
+
+        &__item-img {
+            width: 170px;
+        }
+
+        &__item-dscr {
+            width: 140px;
+            padding: 7px;
+            top: 90px;
+        }
+
+        &__name {
+            font-size: 11px;
+        }
+
+        &__item-text {
+            font-size: 9px;
+        }
+    }
 }
 
 
@@ -153,6 +181,43 @@
         &__btn {
             margin-top: 10px;
             font-size: 12px;
+        }
+    }
+
+    .teachers {
+        &__inner {
+            gap: 10px;
+        }
+
+        &__content {
+            width: 310px;
+        }
+
+        &__items {
+            width: 435px;
+            column-gap: 15px;
+        }
+
+        &__item {
+            width: 210px;
+        }
+
+        &__item-img {
+            width: 142px;
+        }
+
+        &__item-dscr {
+            min-height: 59px;
+            width: 122px;
+            top: 75px;
+        }
+
+        &__name {
+            font-size: 8px;
+        }
+
+        &__item-text {
+            font-size: 7px;
         }
     }
 }
@@ -296,6 +361,13 @@
     .courses__inner {
         column-gap: 10px;
     }
+
+    .teachers {
+        &__item-text {
+            margin-top: 3px;
+        }
+    }
+
 }
 
 
@@ -364,6 +436,22 @@
 
     .courses__items {
         width: 80%;
+    }
+
+    .teachers__inner {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 59px;
+    }
+
+    .teachers__items {
+        margin-top: 30px;
+    }
+
+    .teachers__content {
+        width: 380px;
+        text-align: center;
     }
 }
 
@@ -525,8 +613,23 @@
 
 
 @media (max-width: 440px) {
-    .courses__items{
+    .courses__items {
         grid-template-columns: 1fr;
+    }
+    .courses__line {
+        left: -105px;
+    }
+
+    .teachers__items {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .teachers__item:nth-child(2n) {
+        justify-self: auto;
+    }
+
+    .teachers__content {
+        width: 300px;
     }
 }
 
@@ -617,5 +720,22 @@
     .stages__item-num {
         font-size: 12px;
         line-height: 14px;
+    }
+
+    .courses__line {
+        left: -80px;
+    }
+
+    .teachers__content {
+        width: 200px;
+    }
+
+    .teachers__item-img {
+        width: 204px;
+    }
+
+    .teachers__item-dscr {
+        top: 129px;
+        right: -46px;
     }
 }
