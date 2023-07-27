@@ -18,7 +18,7 @@ function styles() {
     return src([
         'node_modules/normalize.css/normalize.css',
         // 'node_modules/magnific-popup/dist/magnific-popup.css',
-        // 'node_modules/swiper/swiper-bundle.css',
+        'node_modules/swiper/swiper-bundle.css',
         'app/scss/fonts.scss',
         'app/scss/style.scss',
         'app/scss/media.scss'
@@ -37,7 +37,7 @@ function scripts() {
     return src([
         // 'node_modules/jquery/dist/jquery.js',
         // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-        // 'node_modules/swiper/swiper-bundle.js',
+        'node_modules/swiper/swiper-bundle.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))

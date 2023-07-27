@@ -95,6 +95,23 @@
             font-size: 9px;
         }
     }
+
+    .reviews__slider {
+        width: 660px;
+        min-height: 414px;
+    }
+
+    .certificates__content {
+        width: 300px;
+    }
+
+    .certificates__slider-img {
+        width: 280px;
+    }
+
+    .certificates__slider {
+        width: 870px;
+    }
 }
 
 
@@ -137,7 +154,6 @@
             height: 160px;
         }
     }
-
 
     .courses {
         &__items {
@@ -219,6 +235,32 @@
         &__item-text {
             font-size: 7px;
         }
+    }
+
+    .reviews__slider-img {
+        height: 290px;
+    }
+
+    .reviews__slider {
+        width: 511px;
+        min-height: 344px;
+    }
+
+    .reviews__slider-name {
+        font-size: 12px;
+    }
+
+    .reviews__slider-text {
+        font-size: 10px;
+    }
+
+    .reviews__slider-btn {
+        width: 160px;
+        font-size: 10px;
+    }
+
+    .reviews__slider-svg {
+        margin-top: 0;
     }
 }
 
@@ -368,6 +410,67 @@
         }
     }
 
+    .reviews__slider-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .reviews__slider {
+        width: 420px;
+        min-height: 240px;
+    }
+
+    .reviews__slider-text {
+        line-height: 11px;
+    }
+
+    .reviews__slider-btn {
+        width: 124px;
+        height: 39px;
+        font-size: 8px;
+    }
+
+    .reviews__slider-svg {
+        width: 15px;
+    }
+
+    .reviews__slider-name {
+        margin-top: 10px;
+    }
+
+    .reviews__slider-text {
+        margin-top: 10px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 32px;
+    }
+
+    .certificates__content {
+        width: 195px;
+    }
+
+    .certificates__slider-img {
+        width: 200px;
+    }
+
+    .certificates__slider {
+        width: 620px;
+    }
+
+    .certificates__inner {
+        gap: 10px;
+    }
+
+    .swiper-pagination.certificates__slider-pagination {
+        bottom: -20px;
+        left: 151px;
+
+    }
+
+    .certificates__items {
+        padding-bottom: 74px;
+    }
 }
 
 
@@ -453,6 +556,60 @@
         width: 380px;
         text-align: center;
     }
+
+    .reviews__inner {
+        flex-direction: column;
+        margin-bottom: 59px;
+        margin-top: 50px;
+    }
+
+    .reviews__content {
+        text-align: center;
+    }
+
+    .reviews__slider {
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .reviews__content {
+        margin-inline: auto;
+    }
+
+    .certificates__inner {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 59px;
+        margin-top: 50px;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .certificates__content {
+        text-align: center;
+        width: 374px;
+    }
+
+    .swiper-pagination.certificates__slider-pagination {
+        text-align: left;
+    }
+
+    .certificates__slider{
+        width: 565px;
+        text-align: center;
+    }
+
+    .swiper-pagination.certificates__slider-pagination {
+        left: 182px;
+    }
+
+    .certificates__line {
+        left: -20px;
+    }
+
+    .reviews__line {
+        left: 29px;
+    }
 }
 
 
@@ -486,9 +643,16 @@
         color: #FFF8F3;
     }
 
-
     .courses__items {
         width: auto;
+    }
+
+    .certificates__slider {
+        width: 450px;
+    }
+
+    .swiper-pagination.certificates__slider-pagination {
+        left: 124px;
     }
 }
 
@@ -609,6 +773,22 @@
         width: 300px;
     }
 
+    .reviews__content {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .reviews__slider-btn {
+        bottom: 20px;
+    }
+
+    .reviews__slider {
+        max-width: 420px;
+    }
+
+    .certificates__content {
+        width: 300px;
+    }
 }
 
 
@@ -631,7 +811,17 @@
     .teachers__content {
         width: 300px;
     }
+
+    .certificates__slider {
+        width: 320px;
+        text-align: center;
+    }
+
+    .swiper-pagination.certificates__slider-pagination {
+        left: 36px;
+    }
 }
+
 
 @media (max-width: 420px) {
     .products__item {
@@ -647,6 +837,29 @@
             width: 67px;
             height: 101px;
         }
+    }
+    .reviews__slider-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .reviews__slider-btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .reviews__line {
+        left: -30px;
+    }
+
+    .certificates__line {
+        left: -30px;
+    }
+
+    .reviews__line {
+        left: 10px;
     }
 }
 
@@ -726,6 +939,10 @@
         left: -80px;
     }
 
+    .teachers__item {
+        width: 300px;
+    }
+
     .teachers__content {
         width: 200px;
     }
@@ -736,6 +953,19 @@
 
     .teachers__item-dscr {
         top: 129px;
-        right: -46px;
+        right: 0;
+        width: 156px;
+    }
+
+    .reviews__slider-content {
+        width: 250px;
+    }
+
+    .certificates__slider {
+        width: 274px;
+    }
+
+    .swiper-pagination.certificates__slider-pagination {
+        left: 14px;
     }
 }
