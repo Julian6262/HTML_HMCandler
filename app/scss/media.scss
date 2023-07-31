@@ -112,6 +112,14 @@
     .certificates__slider {
         width: 870px;
     }
+
+    .promo__title {
+        width: 610px;
+    }
+
+    .contacts__img {
+        width: 335px;
+    }
 }
 
 
@@ -260,6 +268,19 @@
     }
 
     .reviews__slider-svg {
+        margin-top: 0;
+    }
+
+    .promo__title {
+        width: 500px;
+    }
+
+    .contacts__img {
+        width: 250px;
+        height: 450px;
+    }
+
+    .form {
         margin-top: 0;
     }
 }
@@ -471,6 +492,38 @@
     .certificates__items {
         padding-bottom: 74px;
     }
+
+    .promo__btn {
+        width: 125px;
+        height: 40px;
+    }
+
+    .promo__title {
+        width: auto;
+    }
+
+    .promo {
+        height: 150px;
+    }
+
+    .form{
+        height: 285px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .form__title{
+        margin-bottom: 20px;
+    }
+
+    .form__btn{
+        width: 170px;
+        height: 50px;
+    }
+
+    .contacts__img{
+        width: 187px;
+        height: 285px;
+    }
 }
 
 
@@ -610,6 +663,10 @@
     .reviews__line {
         left: 29px;
     }
+
+    .promo__inner{
+        justify-content: space-around;
+    }
 }
 
 
@@ -654,6 +711,13 @@
     .swiper-pagination.certificates__slider-pagination {
         left: 124px;
     }
+
+    .form__btn{
+        width: 85px;
+        height: 40px;
+        font-size: 10px;
+    }
+
 }
 
 
@@ -789,6 +853,10 @@
     .certificates__content {
         width: 300px;
     }
+
+    .contacts__img{
+        display: none;
+    }
 }
 
 
@@ -860,6 +928,12 @@
 
     .reviews__line {
         left: 10px;
+    }
+
+    .promo__btn {
+        width: 79px;
+        height: 32px;
+        font-size: 10px;
     }
 }
 

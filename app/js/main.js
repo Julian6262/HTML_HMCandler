@@ -34,7 +34,6 @@ let swiper1 = new Swiper(".reviews__slider", {
 let swiper2 = new Swiper(".certificates__slider", {
     slidesPerView: 1,
     spaceBetween: 5,
-    // loop: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -52,4 +51,3 @@ let swiper2 = new Swiper(".certificates__slider", {
         },
     },
 });
-////////////////////////////////////////
