@@ -20,6 +20,7 @@ function toggleTwoClasses(e, element, first, second, timeOfAnimation) {
     }
 }
 
+
 // SWIPER/////////////////////////////////
 let swiper1 = new Swiper(".reviews__slider", {
     spaceBetween: 30,
@@ -51,3 +52,30 @@ let swiper2 = new Swiper(".certificates__slider", {
         },
     },
 });
+
+
+// ACCORDEON/////////////////////////////////
+const accordeon = document.querySelector('.questions__items');
+const accordeonTitles = accordeon.querySelectorAll('.questions__title');
+
+accordeonTitles.forEach.call(accordeonTitles, function (accordeonTitle) {
+    accordeonTitle.addEventListener('click', function () {
+        const currentText = accordeonTitle.parentElement.querySelector('.questions__text')
+        accordeonTitle.classList.toggle('questions__title--active');
+        currentText.classList.toggle('questions__text--visible');
+
+        if (currentText.classList.contains('questions__text--visible')) {
+            currentText.style.maxHeight = currentText.scrollHeight + 'px';
+        } else {
+            currentText.style.maxHeight = null;
+        }
+    });
+});
+
+
+// MODAL////////////////////////////////////////////////
+const modal = document.querySelector('.modal');
+
+modal.onclick = function () {
+    // console.log('df')
+};
