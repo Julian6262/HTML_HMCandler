@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="!!!!!!!!!!!!!!">
+    <meta name="description" content="HM-candler">
     <title>HM-candler</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -22,22 +22,22 @@
 
             <ul class="menu__list header__menu-list">
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Про нас</a>
+                    <a class="menu__item-link" href="#about">Про нас</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Каталог</a>
+                    <a class="menu__item-link" href="#products">Каталог</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Команда</a>
+                    <a class="menu__item-link" href="#teachers">Команда</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Отзывы</a>
+                    <a class="menu__item-link" href="#reviews">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Курсы</a>
+                    <a class="menu__item-link" href="#courses">Курсы</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Контакты</a>
+                    <a class="menu__item-link" href="#contacts">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -65,7 +65,7 @@
                     натурального соевого воска.
                 </p>
 
-                <button class="btn top__btn modal">Купить</button>
+                <button class="btn top__btn modals-btn">Купить</button>
 
                 <picture class="top__img-media">
                     <source srcset="img/top360.png" media="(max-width:360px)">
@@ -82,7 +82,7 @@
         <div class="container about__inner">
 
             <div class="about__content">
-                <h2 class="title about__title">Про нас</h2>
+                <h2 class="title about__title" id="about">Про нас</h2>
                 <p class="about__text">Богдан создатель бренда который всегда заинтересован в изготовлении разнообразных
                     вещей дома. Он регулярно экспериментировал с различными материалами и инструментами, пробуя свои
                     силы во многих областях, включая изготовление свечей.
@@ -129,7 +129,7 @@
 
             <div class="products__content">
 
-                <h2 class="title products__title">
+                <h2 class="title products__title" id="products">
                     Наши товары
                 </h2>
 
@@ -143,7 +143,7 @@
 
             <div class="products__items">
 
-                <a class="products__item" href="#">
+                <a class="products__item" href="#" target="_blank">
                     <img class="products__item-img" src="img/product1.jpg" alt="...">
                     <h3 class="products__item-price">10$</h3>
                     <h3 class="products__item-name">"Сердечко любви"</h3>
@@ -151,10 +151,10 @@
                         Запах: нежный аромат розы и ванили.
                         Для чего: для атмосферы романтического настроения
                     </p>
-                    <p class="btn products__btn">Купить</p>
+                    <button class="btn products__btn">Купить</button>
                 </a>
 
-                <a class="products__item" href="#">
+                <a class="products__item" href="#" target="_blank">
                     <img class="products__item-img" src="img/product2.jpg" alt="...">
                     <h3 class="products__item-price">20$</h3>
                     <h3 class="products__item-name">"Вихрь любви"</h3>
@@ -162,10 +162,10 @@
                         Запах: нежный аромат лаванды.
                         Для чего: для создания атмосферы уюта
                     </p>
-                    <p class="btn products__btn">Купить</p>
+                    <button class="btn products__btn">Купить</button>
                 </a>
 
-                <a class="products__item" href="#">
+                <a class="products__item" href="#" target="_blank">
                     <img class="products__item-img" src="img/product3.jpg" alt="...">
                     <h3 class="products__item-price">10$</h3>
                     <h3 class="products__item-name">"Радуга"</h3>
@@ -173,17 +173,17 @@
                         Запах: свежий аромат лайма.
                         Для чего: для энергии и свежести в помещении.
                     </p>
-                    <p class="btn products__btn">Купить</p>
+                    <button class="btn products__btn">Купить</button>
                 </a>
 
-                <a class="products__item" href="#">
+                <a class="products__item" href="#" target="_blank">
                     <img class="products__item-img" src="img/product4.jpg" alt="...">
                     <h3 class="products__item-price">10$</h3>
                     <h3 class="products__item-name">"Женское очарование"</h3>
                     <p class="products__item-text">
                         Запах: нежный аромат лаванды и фрезий. Для чего: для уюта и комфорта.
                     </p>
-                    <p class="btn products__btn">Купить</p>
+                    <button class="btn products__btn">Купить</button>
                 </a>
 
             </div>
@@ -377,7 +377,7 @@
         <div class="container courses__inner">
 
             <div class="courses__content">
-                <h2 class="title courses__title">
+                <h2 class="title courses__title" id="courses">
                     Наши курсы
                 </h2>
 
@@ -389,7 +389,7 @@
 
             <div class="courses__items">
 
-                <a class="courses__item" href="#">
+                <a class="courses__item" href="#" target="_blank">
                     <img class="courses__img" src="img/courses1.jpg" alt="...">
                     <h3 class="courses__item-title">
                         Основы изготовления свечей
@@ -406,12 +406,12 @@
                     <p class="courses__item-price">
                         Цена - 40$
                     </p>
-                    <p class="btn courses__btn">
+                    <button class="btn courses__btn">
                         Купить курсы
-                    </p>
+                    </button>
                 </a>
 
-                <a class="courses__item" href="#">
+                <a class="courses__item" href="#" target="_blank">
                     <img class="courses__img" src="img/courses2.jpg" alt="...">
                     <h3 class="courses__item-title">
                         Искусство ароматерапии
@@ -428,9 +428,9 @@
                     <p class="courses__item-price">
                         Цена - 20$
                     </p>
-                    <p class="btn courses__btn">
+                    <button class="btn courses__btn">
                         Купить курсы
-                    </p>
+                    </button>
                 </a>
 
 
@@ -449,7 +449,7 @@
         <div class="container teachers__inner">
 
             <div class="teachers__content">
-                <h2 class="title teachers__title">
+                <h2 class="title teachers__title" id="teachers">
                     Наши преподаватели
                 </h2>
 
@@ -517,7 +517,7 @@
         <div class="container reviews__inner">
 
             <div class="reviews__content">
-                <h2 class="title reviews__content-title">
+                <h2 class="title reviews__content-title" id="reviews">
                     Отзывы от клиентов
                 </h2>
                 <p class="reviews__content-text">
@@ -549,7 +549,7 @@
                                         точно закажу еще свечей от этого сайта!
                                     </p>
                                 </blockquote>
-                                <button class="btn reviews__slider-btn">Купить этот товар</button>
+                                <button class="btn reviews__slider-btn modals-btn">Купить этот товар</button>
                             </div>
                         </div>
 
@@ -570,7 +570,7 @@
                                         точно закажу еще свечей от этого сайта!
                                     </p>
                                 </blockquote>
-                                <button class="btn reviews__slider-btn">Купить этот товар</button>
+                                <button class="btn reviews__slider-btn modals-btn">Купить этот товар</button>
                             </div>
                         </div>
 
@@ -591,7 +591,7 @@
                                         точно закажу еще свечей от этого сайта!
                                     </p>
                                 </blockquote>
-                                <button class="btn reviews__slider-btn">Купить этот товар</button>
+                                <button class="btn reviews__slider-btn modals-btn">Купить этот товар</button>
                             </div>
                         </div>
 
@@ -612,7 +612,7 @@
                                         точно закажу еще свечей от этого сайта!
                                     </p>
                                 </blockquote>
-                                <button class="btn reviews__slider-btn">Купить этот товар</button>
+                                <button class="btn reviews__slider-btn modals-btn">Купить этот товар</button>
                             </div>
                         </div>
 
@@ -897,7 +897,7 @@
             <h2 class="title promo__title">
                 Покупайте больше, экономьте больше
             </h2>
-            <a class="btn promo__btn" href="#">
+            <a class="btn promo__btn" href="#" target="_blank">
                 В каталог
             </a>
         </div>
@@ -907,7 +907,7 @@
         <div class="container contacts__inner">
 
             <form class="form">
-                <h2 class="title form__title">
+                <h2 class="title form__title" id="contacts">
                     Подпишись на наши акции
                 </h2>
 
@@ -930,6 +930,23 @@
         </div>
     </section>
 
+    <div class="modal">
+        <form class="modal__form">
+
+            <svg class="modal__svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 4.5H8c-2.357 0-3.536 0-4.268.732C3 5.964 3 7.143 3 9.5v.5m6 9.5H8c-2.357 0-3.536 0-4.268-.732C3 18.035 3 16.857 3 14.5V14M13.658 2.347c-2.162-.377-3.243-.565-3.95.062C9 3.036 9 4.183 9 6.476v11.048c0 2.293 0 3.44.707 4.067.707.627 1.788.439 3.95.062l2.33-.406c2.394-.418 3.591-.627 4.302-1.505.711-.879.711-2.149.711-4.69V8.948c0-2.54 0-3.81-.71-4.689-.476-.587-1.168-.875-2.29-1.126M12 11v2"/>
+            </svg>
+
+            <label>
+                <input class="modal__input" type="text" placeholder="Ваше имя">
+            </label>
+            <label>
+                <input class="modal__input" type="text" placeholder="Ваш телефон">
+            </label>
+            <button class="modal__btn" type="submit">Отправить</button>
+        </form>
+    </div>
+
 </main>
 
 <footer class="footer">
@@ -942,22 +959,22 @@
         <nav class="menu">
             <ul class="menu__list footer__menu-list">
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Про нас</a>
+                    <a class="menu__item-link" href="#about">Про нас</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Каталог</a>
+                    <a class="menu__item-link" href="#products">Каталог</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Команда</a>
+                    <a class="menu__item-link" href="#teachers">Команда</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Отзывы</a>
+                    <a class="menu__item-link" href="#reviews">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Курсы</a>
+                    <a class="menu__item-link" href="#courses">Курсы</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__item-link" href="#">Контакты</a>
+                    <a class="menu__item-link" href="#contacts">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -996,18 +1013,6 @@
 
     </div>
 </footer>
-
-<div class="modal">
-    <form class="modal__form">
-        <label>
-            <input class="modal__input" type="text" placeholder="Ваше имя">
-        </label>
-        <label>
-            <input class="modal__input" type="text" placeholder="Ваш телефон">
-        </label>
-        <input class="modal__input" type="submit" value="Отправить">
-    </form>
-</div>
 
 <script src="js/main.min.js"></script>
 

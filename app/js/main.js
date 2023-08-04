@@ -76,6 +76,28 @@ accordeonTitles.forEach.call(accordeonTitles, function (accordeonTitle) {
 // MODAL////////////////////////////////////////////////
 const modal = document.querySelector('.modal');
 
-modal.onclick = function () {
-    // console.log('df')
-};
+document.addEventListener("click", function (e) {
+    if (e.target.classList.contains("modals-btn")) {
+        modal.classList.add('modal--active');
+    }
+    if (e.target.classList.contains("modal") || e.target.classList.contains("modal__svg")) {
+        modal.classList.remove('modal--active');
+    }
+});
+
+
+// SCROLL/////////////////////////////////////////////
+const menu = document.querySelectorAll(".menu__item-link");
+
+menu.forEach((item) => {
+    item.addEventListener("click", (e) => {
+
+        e.preventDefault();
+        let elem = document.getElementById(e.target.getAttribute('href').slice(1));
+
+        window.scrollBy({
+            top: elem.getBoundingClientRect().top - 50,
+            behavior: 'smooth'
+        });
+    });
+});

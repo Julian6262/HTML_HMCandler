@@ -58,6 +58,7 @@ li {
     align-items: center;
     background-color: #FFBD59;
     font-size: 14px;
+    color: black;
 }
 
 .line {
@@ -73,28 +74,77 @@ li {
 }
 
 .modal {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    opacity: 0;
+    transition: .4s;
+}
+
+.modal__form {
     width: 300px;
-    cursor: default;
-    position: absolute;
+    background-color: white;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: relative;
 }
 
 .modal__input {
-    width: 100%;
+    width: 80%;
+    height: 40px;
     border: 1px solid #e6e6e6;
     outline: none;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-inline: 10px;
+}
+
+.modal__svg {
+    right: 10px;
+    top: 10px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    stroke: #6e6e6e;
+    cursor: pointer;
+    stroke-width: 1.5;
+}
+
+.modal__svg:hover {
+    stroke: #A5978E;
+    stroke-width: 3.5;
+    scale: 1.1;
+    transition: .3s;
+}
+
+.modal__btn {
+    background-color: #A5978E;
+    width: 150px;
     height: 40px;
-    padding-left: 10px;
-    font-family: 'Gilroy', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 
-.modal input[type="submit"] {
-    background-color: #00868A;
+.modal--active {
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.79);
+    opacity: 1;
+    transition: all 0.4s;
 }
 
-.modal input[type="submit"]:hover {
+.modal__btn:hover {
     color: #FFFFFF;
+    transition: .3s;
 }
 
 
@@ -190,6 +240,7 @@ li {
 
 .top__btn {
     margin-top: 50px;
+
 }
 
 .top__img {
@@ -676,9 +727,10 @@ li {
     background-color: white;
     width: 100%;
     height: 50px;
-    box-shadow: 0 4px 11px 0 rgba(196, 174, 151, 0.20);
+    box-shadow: 0 4px 11px 0 rgba(196, 174, 151, 0.56);
     text-align: left;
     position: relative;
+    color: black;
 }
 
 .questions__text {
