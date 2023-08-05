@@ -116,6 +116,10 @@ li {
     stroke-width: 1.5;
 }
 
+.modal__svg-img {
+    pointer-events: none;
+}
+
 .modal__svg:hover {
     stroke: #A5978E;
     stroke-width: 3.5;

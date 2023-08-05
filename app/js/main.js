@@ -80,6 +80,7 @@ document.addEventListener("click", function (e) {
     if (e.target.classList.contains("modals-btn")) {
         modal.classList.add('modal--active');
     }
+    console.log(e.target.classList);
     if (e.target.classList.contains("modal") || e.target.classList.contains("modal__svg")) {
         modal.classList.remove('modal--active');
     }
